@@ -1,0 +1,28 @@
+<div class="my-container">
+  <div class="card text-white bg-primary" style="max-width: 20rem">
+    <div class="card-header text-center">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search Place"
+          class="search-bar"
+          [(ngModel)]="searchCity"
+        />
+        <button (click)="getWeatherFromInput()" class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <h2>{{ city }}</h2>
+
+      <p><img src="{{ iconURL }}" alt="weather image" /></p>
+    </div>
+    <div class="card-body text-center">
+      <p class="card-text">Summary: {{ summary }}</p>
+      <p class="card-text">Temperature: {{ temperature }} °F</p>
+      <p class="card-text">Feels like: {{ feelsLikeTemp }} F</p>
+      <p class="card-text">Pressure: {{ pressure }} hPa</p>
+      <p class="card-text">Humidity: {{ humidity }} %</p>
+    </div>
+  </div>
+</div>

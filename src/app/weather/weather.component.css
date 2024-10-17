@@ -1,0 +1,34 @@
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.search-bar {
+  border-radius: 13px;
+  border: none;
+  height: 30px;
+  margin: 30px 20px;
+  width: calc(100% - 40px); /* Adjust for icon width */
+  padding: 10px 40px 10px 20px; /* Add padding for the icon */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 30px; /* Adjust positioning */
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(72, 67, 230); /* Change icon color if needed */
+}
+
+.search-button i {
+  font-size: 16px; /* Adjust icon size */
+}
